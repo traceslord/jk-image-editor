@@ -13,7 +13,7 @@
       append-to-body
       :show-close="false"
     >
-      <img class="preview-image-url" :src="previewImageUrl" />
+      <img class="preview-image-url" :style="{ width, height }" :src="previewImageUrl" />
     </el-dialog>
   </div>
 </template>
@@ -86,8 +86,8 @@ export default {
 }
 .preview-dialog {
   /deep/.el-dialog {
-    width: 500px;
-    height: 700px;
+    width: 100%;
+    text-align: center;
     border-radius: 0;
     box-shadow: none;
     background-color: transparent;
@@ -96,12 +96,6 @@ export default {
     }
     .el-dialog__body {
       padding: 0;
-      width: 100%;
-      height: 100%;
-      .preview-image-url {
-        width: 100%;
-        height: 100%;
-      }
     }
   }
 }
