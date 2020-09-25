@@ -8,6 +8,7 @@
       <slot name="editor-content"></slot>
     </div>
     <el-dialog
+      ref="previewDialog"
       class="preview-dialog"
       :visible.sync="previewVisible"
       append-to-body
@@ -53,6 +54,7 @@ export default {
         canvas => {
           this.previewImageUrl = canvas.toDataURL();
           this.previewVisible = true;
+          this.$refs["previewDialog"].$el.childNodes[0].style.width = this.width;
         }
       );
     },
@@ -86,7 +88,6 @@ export default {
 }
 .preview-dialog {
   /deep/.el-dialog {
-    width: 100%;
     text-align: center;
     border-radius: 0;
     box-shadow: none;
