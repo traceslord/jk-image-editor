@@ -1,0 +1,26 @@
+{
+  "name": "jk-image-editor",
+  "version": "1.0.0",
+  "description": "Image editor in JK",
+  "main": "index.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traceslord/jk-image-editor.git"
+  },
+  "keywords": [
+    "JK",
+    "image-editor"
+  ],
+  "author": "zhuhuajian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/traceslord/jk-image-editor/issues"
+  },
+  "homepage": "https://github.com/traceslord/jk-image-editor#readme",
+  "dependencies": {
+    "html2canvas": "^1.0.0-rc.7"
+  }
+}
